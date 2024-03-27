@@ -20,7 +20,7 @@ def main():
     if choice in script_map:
         script_name = script_map[choice]
         try:
-            subprocess.run(['python3', script_name], check=True)
+            subprocess.run(['python', script_name], check=True)
         except subprocess.CalledProcessError as e:
             print(f"Error executing {script_name}: {e}")
     else:
