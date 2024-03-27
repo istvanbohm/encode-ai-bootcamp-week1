@@ -6,12 +6,15 @@ def main():
     print("(1) Passionate Mexican")
     print("(2) Focused French")
     print("(3) Hungry Hungarian")
-    choice = input("Enter your choice (1/2/3): ").strip()
+    print("(4) Crazy Argentinian")
+
+    choice = input("Enter your choice (1/2/3/4): ").strip()
 
     script_map = {
         '1': 'MexicanChefGPT.py',
         '2': 'FrenchChefGPT.py',
         '3': 'HungarianChefGPT.py',
+        '4': 'ArgentinianChefGPT.py', 
     }
 
     if choice in script_map:
